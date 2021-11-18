@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_dimen"
+    android:paddingLeft="@dimen/activity_horizontal_dimen"
+    android:paddingRight="@dimen/activity_horizontal_dimen"
+    android:paddingBottom="@dimen/activity_vertical_dimen"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/poem01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:orientation="vertical"
+        android:tag="01"
+        android:clickable="true"
+        android:onClick="displayPoem">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_title"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#994C00"
+            android:text="@string/title01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author01"
+            android:textStyle="bold"
+            android:textColor="#009900"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="@string/body01"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poem02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:tag="02"
+        android:onClick="displayPoem">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#994C00"
+            android:text="@string/title02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#009900"
+            android:text="@string/author02"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="@string/body02"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

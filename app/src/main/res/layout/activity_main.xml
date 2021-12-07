@@ -15,31 +15,41 @@
         android:id="@+id/poem01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_list"
+        android:background="@drawable/rectangle"
         android:orientation="vertical"
         android:tag="01"
         android:clickable="true"
         android:onClick="displayPoem">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_title"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:textStyle="bold"
-            android:textColor="#994C00"
+            android:textSize="18sp"
+            android:textColor="#61380B"
             android:text="@string/title01" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/author01"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="#009900"/>
+            android:textColor="#22741C"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:singleLine="true"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:text="@string/body01"/>
 
@@ -49,35 +59,44 @@
         android:id="@+id/poem02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_list"
+        android:background="@drawable/rectangle"
         android:orientation="vertical"
-        android:clickable="true"
         android:tag="02"
+        android:clickable="true"
         android:onClick="displayPoem">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_title"
-            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textColor="#994C00"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#61380B"
             android:text="@string/title02" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/author02"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="#009900"
-            android:text="@string/author02"/>
+            android:textColor="#22741C"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:singleLine="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
             android:text="@string/body02"/>
 
     </LinearLayout>
-
 
 </LinearLayout>

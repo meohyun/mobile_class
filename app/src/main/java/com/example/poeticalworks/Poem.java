@@ -41,13 +41,13 @@ public class Poem  extends AppCompatActivity {
         String body = res.getString(id_body);
         tv_body.setText(body);
 
-//        int id_background = res.getIdentifier("background"+tag,"string",getPackageName());
-//        String background = res.getString(id_background);
-//
-//        int id_img = res.getIdentifier(background,"drawable",getPackageName());
-//
-//        Drawable drawable = res.getDrawable(id_img);
-//        layout_poem.setBackground(drawable);
+        int id_background = res.getIdentifier("background"+tag,"string",getPackageName());
+        String background = res.getString(id_background);
+
+        int id_img = res.getIdentifier(background,"drawable",getPackageName());
+
+        Drawable drawable = res.getDrawable(id_img);
+        layout_poem.setBackground(drawable);
 
     }
 }
